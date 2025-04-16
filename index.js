@@ -10,6 +10,7 @@ function ceil(number) {
 }
 
 app.post('/functions/ceil', (req, res) => {
+   console.log('Request Body from func.live:', req.body);
   const {input}=req.body;
   const number=Number(input)
   if (typeof number !== 'number') {
