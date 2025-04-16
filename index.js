@@ -28,12 +28,12 @@ app.get('/functions/ceil', (req, res) => {
     input: {
       type: 'number',
       description: 'A number to round up.',
-      example: 3.14
+      example: 9.5
     },
     output: {
       type: 'number',
       description: 'The smallest integer greater than or equal to the input number.',
-      example: 4
+      example: 10
     }
   });
 });
