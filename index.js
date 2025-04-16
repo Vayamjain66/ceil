@@ -10,8 +10,8 @@ function ceil(number) {
 }
 
 app.post('/functions/ceil', (req, res) => {
-  const number = Number(req.body.input);
-
+  const {input}=req.body;
+  const number=Number(input)
   if (typeof number !== 'number') {
     return res.status(400).json({ error: 'Input must be a number.' });
   }
